@@ -1,0 +1,15 @@
+name: "Reusable Workflow"
+
+on:
+  workflow_call:
+    inputs:
+      message:
+        required: true
+        type: string
+
+jobs:
+  print-message:
+    runs-on: ubuntu22-basic
+    steps:
+      - name: Print the input message
+        run: echo "Message from reusable workflow"
