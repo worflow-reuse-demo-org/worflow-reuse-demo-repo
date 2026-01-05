@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu22-basic
     steps:
       - name: Print the input message
-        run: echo "Message from reusable workflow"
+        run: echo "Message from reusable workflow - ${{ inputs.message }}"
